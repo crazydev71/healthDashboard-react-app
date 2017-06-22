@@ -79,7 +79,8 @@ module.exports = function(proxy, allowedHost) {
     public: allowedHost,
     proxy: {
       '/api': {
-        target: 'https://health-backend-go.herokuapp.com:8000',
+        target: 'http://localhost:8000',
+        // target: 'http://health-backend-go.herokuapp.com:8000',
         secure: false
       }
     },
